@@ -1,8 +1,7 @@
 CREATE TABLE usuario (
-usuarioID INT AUTO_INCREMENT PRIMARY KEY,,
-data_criacao DATE,
-usuario VARCHAR(100),
-senha VARCHAR(100),
-nome_usuario VARCHAR(100),
-sobrenome_usuario VARCHAR(100)
+ID INT AUTO_INCREMENT PRIMARY KEY,
+nome   VARCHAR(100) NOT NULL,
+email  VARCHAR(150) NOT NULL UNIQUE,
+senha  VARCHAR(255) NOT NULL,
+role   VARCHAR(50)  NOT NULL
 );
